@@ -84,3 +84,7 @@ see. https://docs.microsoft.com/ja-jp/azure/azure-functions/durable/durable-func
     - キー・バリュー型データストアを提供する分散データベース管理システムであるCassandraのAPIと互換なもの
 - SQL
     - SQLクエリに根ざしたクエリ機能を提供。JavaScriptおよびJSONネイティブAPI。
+
+## App Serviceでのアプリの診断ログの有効化
+
+see. https://docs.microsoft.com/ja-jp/azure/app-service/troubleshoot-diagnostic-logs
