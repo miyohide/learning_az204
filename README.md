@@ -71,3 +71,16 @@ see. https://docs.microsoft.com/ja-jp/azure/azure-functions/durable/durable-func
 
 - 選択したAzure Blob StorageまたはAzure Data Lake Storageアカウント内のEvent Hubsのストリーミングデータを自動的にキャプチャするもの。
 - ファイル名は`https://<storageaccount>.blob.core.windows.net/<container>/<namespace>/<eventhub>/<partitionid>/<year>/<month>/<day>/<hour>/<minute>/<second>.avro`になる
+
+## Azure Cosmos DBにサポートされているAPI
+
+- MongoDB
+    - ドキュメント指向データベースのMongoDBのAPIと互換なもの
+- Table
+    - 既存のAzure Tableストレージアプリにプレミアム機能を提供するために構築されたキー値データベース
+- Gremlin
+    - グラフデータを格納及び操作するために使用する
+- Cassandra
+    - キー・バリュー型データストアを提供する分散データベース管理システムであるCassandraのAPIと互換なもの
+- SQL
+    - SQLクエリに根ざしたクエリ機能を提供。JavaScriptおよびJSONネイティブAPI。
