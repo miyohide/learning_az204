@@ -104,3 +104,13 @@ see. https://docs.microsoft.com/ja-jp/azure/app-service/troubleshoot-diagnostic-
 3. ユーザーのコネクタを使用する
 4. ユーザーのコネクタを共有する（オプション）
 5. ユーザーのコネクタを保証する（オプション）
+
+## Azure ADのアプリマニフェスト
+
+Azure ADの属性を設定するファイル。ポータルでできない項目があるのでこのファイルで設定する。
+
+see. https://docs.microsoft.com/ja-jp/azure/active-directory/develop/reference-app-manifest
+
+- allowPublicClient
+- oauth2AllowImplicitFlow
+    - OAuth2.0暗黙的フローアクセストークンを要求できるかどうか。SPAなどで利用。
