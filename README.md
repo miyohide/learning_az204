@@ -88,3 +88,19 @@ see. https://docs.microsoft.com/ja-jp/azure/azure-functions/durable/durable-func
 ## App Serviceでのアプリの診断ログの有効化
 
 see. https://docs.microsoft.com/ja-jp/azure/app-service/troubleshoot-diagnostic-logs
+
+## B2B Logic Appsの構築を開始するための手順
+
+1. 統合アカウントを作成する
+2. パートナー、契約、その他の成果物を追加する
+3. ロジックアプリの作成
+4. ロジックアプリを統合アカウントにリンクする
+5. 成果物を含むロジックアプリをビルドする
+
+## カスタムコネクタの作成
+
+1. ユーザーのAPIを作成し、安全を確保する
+2. ユーザーのAPIの説明をし、コネクタを規定する
+3. ユーザーのコネクタを使用する
+4. ユーザーのコネクタを共有する（オプション）
+5. ユーザーのコネクタを保証する（オプション）
