@@ -63,3 +63,8 @@ see. https://docs.microsoft.com/ja-jp/azure/azure-functions/durable/durable-func
         - ユーザーは対象サイトのページで何をクリックしているのか
         - 対象サイト内でユーザーが他のサイトに移動するのが最も多い場所はどこか
         - ユーザーが同じ操作を何回も繰り返している場所があるか
+
+## Event Hubs Capture
+
+- 選択したAzure Blob StorageまたはAzure Data Lake Storageアカウント内のEvent Hubsのストリーミングデータを自動的にキャプチャするもの。
+- ファイル名は`https://<storageaccount>.blob.core.windows.net/<container>/<namespace>/<eventhub>/<partitionid>/<year>/<month>/<day>/<hour>/<minute>/<second>.avro`になる
