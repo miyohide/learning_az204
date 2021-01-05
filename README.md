@@ -114,3 +114,7 @@ see. https://docs.microsoft.com/ja-jp/azure/active-directory/develop/reference-a
 - allowPublicClient
 - oauth2AllowImplicitFlow
     - OAuth2.0暗黙的フローアクセストークンを要求できるかどうか。SPAなどで利用。
+
+## Azure ADに登録できる「アプリ」「リソース」「API制限」の解説
+
+see. https://jpazureid.github.io/blog/azure-active-directory/oauth2-application-resource-and-api-permissions/
