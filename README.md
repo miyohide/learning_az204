@@ -118,3 +118,26 @@ see. https://docs.microsoft.com/ja-jp/azure/active-directory/develop/reference-a
 ## Azure ADに登録できる「アプリ」「リソース」「API制限」の解説
 
 see. https://jpazureid.github.io/blog/azure-active-directory/oauth2-application-resource-and-api-permissions/
+
+## 機密クライアントとパブリッククライアント
+
+Microsoft認証ライブラリ（MSAL）では、機密クライアントとパブリッククライアントの2種類のクライアントが定義されている。
+
+- 機密クライアントは、サーバー（Webアプリ、WebAPIアプリ、サービス／デーモンアプリ）で実行されるアプリ。クライアントIDはWebブラウザを通じて公開されるが、シークレットはバックチャンネルでのみ渡され直接公開されない。`ConfidentialClientApplication`クラスを使用する。
+- パブリッククライアントは、デバイス、デスクトップコンピューター、またはWebブラウザで実行されるアプリ。安全にアプリケーションシークレットを保持することは信頼されていないので、ユーザーの代理でWebAPIにのみアクセスする。`PublicClientApplication`クラスを使用する。
+
+こんな感じで実装。
+
+```csharp
+IConfidentialClientApplication app = ConfidentialClientApplicationBuilder.Create(clientId)
+    .WithClientSecret(clientSecret)
+    .WithRedirectUri("https://foobar.net")
+    .build();
+```
+
+機密クライアントのみに存在する装飾子として
+
+- `.WithCertificate`
+- `.WithClientSecret`
+
+がある。
