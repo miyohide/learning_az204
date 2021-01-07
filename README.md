@@ -19,10 +19,6 @@ PUTメソッドを使って`comp=tier`というクエリ文字列を投げる。
 
 see. https://docs.microsoft.com/ja-jp/rest/api/storageservices/set-blob-tier
 
-## Azure ADのアプリケーションマニフェスト
-
-see. https://docs.microsoft.com/ja-jp/azure/active-directory/develop/reference-app-manifest
-
 ## AzureリソースのマネージドID
 
 see. https://docs.microsoft.com/ja-jp/azure/active-directory/managed-identities-azure-resources/overview
