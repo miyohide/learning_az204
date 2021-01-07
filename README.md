@@ -152,3 +152,13 @@ see. https://docs.microsoft.com/ja-jp/azure/cdn/cdn-caching-rules
 キャッシュディレクティブヘッダーについては、以下を参照のこと。
 
 https://docs.microsoft.com/ja-jp/azure/cdn/cdn-how-caching-works#cache-directive-headers
+
+## Azure Container Registory
+
+### Dockerイメージをビルドしてpushする
+
+`az acr build`を実行すると、Dockerイメージをビルドして、その後Azure Container Registoryにpushする。具体的なコマンドは以下のとおり。
+
+```
+az acr build --image イメージ名 --registry レジストリ名 --file Dockerfile .
+```
