@@ -137,3 +137,18 @@ IConfidentialClientApplication app = ConfidentialClientApplicationBuilder.Create
 - `.WithClientSecret`
 
 がある。
+
+## Azure CDNのキャッシュ動作の設定
+
+- キャッシュのバイパス
+    - キャッシュを行わず、もともと指定されているキャッシュディレクティブヘッダーを無視する
+- オーバーライド
+    - もともと指定されているキャッシュ期間を無視し、代わりに指定したキャッシュ期間を使う。これは、`cache-control`の`no-cache`をオーバーライドしない。
+- 存在しない場合に設定
+    - キャッシュディレクティブヘッダーがもともと指定されていた場合はそれにしたが、指定されていなかった場合は、設定したキャッシュ期間を使う。
+
+see. https://docs.microsoft.com/ja-jp/azure/cdn/cdn-caching-rules
+
+キャッシュディレクティブヘッダーについては、以下を参照のこと。
+
+https://docs.microsoft.com/ja-jp/azure/cdn/cdn-how-caching-works#cache-directive-headers
