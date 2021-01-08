@@ -177,6 +177,8 @@ az vm create --resource-group rg --name vmname --image win2016datacenter --assig
 az vm identity assign -g rg -n vmname
 ```
 
+see. https://docs.microsoft.com/ja-jp/azure/active-directory/managed-identities-azure-resources/qs-configure-cli-windows-vm
+
 ### ユーザーが割り当てたマネージドIDの割り当て方
 
 最初に`az identity create`でユーザー割り当てIDを作成する。
@@ -196,3 +198,5 @@ az vm create --resource-group rg --name vmname --image win2016datacenter --assig
 ```
 az vm identity assign -g rg -n vmname --identities myUserAssignedId
 ```
+
+see. https://docs.microsoft.com/ja-jp/azure/active-directory/managed-identities-azure-resources/qs-configure-cli-windows-vm
