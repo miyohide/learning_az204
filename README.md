@@ -162,3 +162,37 @@ https://docs.microsoft.com/ja-jp/azure/cdn/cdn-how-caching-works#cache-directive
 ```
 az acr build --image イメージ名 --registry レジストリ名 --file Dockerfile .
 ```
+
+### システム割り当てマネージドIDの割り当て方
+
+VM作成時は`--assign-identity`をつける
+
+```
+az vm create --resource-group rg --name vmname --image win2016datacenter --assign-identity --admin-username azureuser --admin-password myPassword1
+```
+
+既存のVMで有効にする場合は`az vm identity assign`を実行する
+
+```
+az vm identity assign -g rg -n vmname
+```
+
+### ユーザーが割り当てたマネージドIDの割り当て方
+
+最初に`az identity create`でユーザー割り当てIDを作成する。
+
+```
+az identity create -g rg -n myUserAssignedId
+```
+
+VM作成時は作成したIDを`--assign-identity`にて指定する。
+
+```
+az vm create --resource-group rg --name vmname --image win2016datacenter --assign-identity myUserAssignedId --admin-username azureuser --admin-password myPassword1
+```
+
+既存のVMでは`az vm identity assign`を実行する。
+
+```
+az vm identity assign -g rg -n vmname --identities myUserAssignedId
+```
