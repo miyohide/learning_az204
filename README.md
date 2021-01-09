@@ -221,3 +221,9 @@ see. https://docs.microsoft.com/ja-jp/azure/app-service/app-service-web-configur
 デフォルトは`PrimaryOnly`。高可用性を求めるのであれば要変更。
 
 see. https://docs.microsoft.com/ja-jp/azure/storage/common/geo-redundant-design#read-requests
+
+## Azure Storage キュートService Busキューとの比較
+
+FIFOや自動重複検出が求められるのであればService Busキュー。その他は以下URLを参照。
+
+see. https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted
