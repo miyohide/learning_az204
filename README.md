@@ -215,3 +215,9 @@ see. https://docs.microsoft.com/ja-jp/azure/virtual-machines/linux/capture-image
 - その他は`X-ARR-ClientCert`HTTPヘッダを使用
 
 see. https://docs.microsoft.com/ja-jp/azure/app-service/app-service-web-configure-tls-mutual-auth
+
+## Azure Storageにおける読み取り要求の高可用性
+
+デフォルトは`PrimaryOnly`。高可用性を求めるのであれば要変更。
+
+see. https://docs.microsoft.com/ja-jp/azure/storage/common/geo-redundant-design#read-requests
