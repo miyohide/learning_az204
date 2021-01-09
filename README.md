@@ -208,3 +208,10 @@ Windowsでは`Sysprep`を使って、Linuxでは`waagent`を使用する。
 see. https://docs.microsoft.com/ja-jp/azure/virtual-machines/windows/capture-image-resource
 
 see. https://docs.microsoft.com/ja-jp/azure/virtual-machines/linux/capture-image
+
+## Azure App ServiceにおけるTLS相互認証の構成
+
+- ASP.NETの場合は`HttpRequest.ClientCertificate`プロパティを使用
+- その他は`X-ARR-ClientCert`HTTPヘッダを使用
+
+see. https://docs.microsoft.com/ja-jp/azure/app-service/app-service-web-configure-tls-mutual-auth
