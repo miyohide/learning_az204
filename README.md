@@ -200,3 +200,11 @@ az vm identity assign -g rg -n vmname --identities myUserAssignedId
 ```
 
 see. https://docs.microsoft.com/ja-jp/azure/active-directory/managed-identities-azure-resources/qs-configure-cli-windows-vm
+
+## Azureで一般化されたVMイメージを作成する
+
+Windowsでは`Sysprep`を使って、Linuxでは`waagent`を使用する。
+
+see. https://docs.microsoft.com/ja-jp/azure/virtual-machines/windows/capture-image-resource
+
+see. https://docs.microsoft.com/ja-jp/azure/virtual-machines/linux/capture-image
