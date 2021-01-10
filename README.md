@@ -223,3 +223,15 @@ see. https://docs.microsoft.com/ja-jp/azure/storage/common/geo-redundant-design#
 FIFOや自動重複検出が求められるのであればService Busキュー。その他は以下URLを参照。
 
 see. https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted
+
+## CosmosDBのリソース階層
+
+以下の階層となっている。
+
+- データベースアカウント
+    - データベース
+        - コンテナー
+            - アイテム
+            - ストアドプロシージャ
+            - ユーザー定義機能
+            - トリガー
