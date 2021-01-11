@@ -235,3 +235,8 @@ see. https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-az
             - ストアドプロシージャ
             - ユーザー定義機能
             - トリガー
+
+## API Managementのrate-limitとquotaとの違い
+
+- `rate-limit`は短期間の制限。
+- `quota`は長期間。`renewal-period`は`3600`以上
