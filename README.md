@@ -240,3 +240,9 @@ see. https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-az
 
 - `rate-limit`は短期間の制限。
 - `quota`は長期間。`renewal-period`は`3600`以上
+
+## Azure App Serviceでのアプリの診断ログの有効化
+
+Azure Monitorにログを送信することも可能。
+
+see. https://docs.microsoft.com/ja-jp/azure/app-service/troubleshoot-diagnostic-logs
