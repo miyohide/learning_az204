@@ -250,3 +250,9 @@ see. https://docs.microsoft.com/ja-jp/azure/app-service/troubleshoot-diagnostic-
 ## Azure Container Instancesを作成する
 
 PowerShellの場合、`New-AzContainerGroup`を使用する
+
+## Azure Functionsのエラー処理と再試行
+
+BLOB Storage/Queue Storage/Service Busにはトリガーソースでの再試行をサポートしている。BLOB Storage/Queue Storageは最大5回、Service Busは最大10回再試行される。
+
+see. https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-error-pages?tabs=csharp
