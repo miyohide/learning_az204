@@ -263,3 +263,11 @@ see. https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-e
 - `dotnet/core/aspnet`は実行用
 
 see. https://docs.microsoft.com/ja-jp/aspnet/core/host-and-deploy/docker/building-net-docker-images?view=aspnetcore-5.0
+
+## Web AppsにCORSの設定を行う
+
+```
+az webapp cors add -g myRG -n myApp --allowed-origins https://myapps.com
+```
+
+see. https://docs.microsoft.com/en-us/cli/azure/webapp/cors?view=azure-cli-latest
