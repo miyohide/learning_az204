@@ -271,3 +271,11 @@ az webapp cors add -g myRG -n myApp --allowed-origins https://myapps.com
 ```
 
 see. https://docs.microsoft.com/en-us/cli/azure/webapp/cors?view=azure-cli-latest
+
+## Event Grid / Event Hubs / Service Busの違い
+
+- publish - subscribeモデルが実装できるのはEvent GridとService Bus
+- Service BusはFIFOのサポートやduplicate detectionがある
+- Event HubsはEvent Hubs CaptureでBlob StorageやData Lake Storageにイベントをキャプチャできる
+
+see. https://docs.microsoft.com/ja-jp/azure/event-grid/compare-messaging-services
