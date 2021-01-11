@@ -246,3 +246,7 @@ see. https://docs.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-az
 Azure Monitorにログを送信することも可能。
 
 see. https://docs.microsoft.com/ja-jp/azure/app-service/troubleshoot-diagnostic-logs
+
+## Azure Container Instancesを作成する
+
+PowerShellの場合、`New-AzContainerGroup`を使用する
