@@ -256,3 +256,10 @@ PowerShellの場合、`New-AzContainerGroup`を使用する
 BLOB Storage/Queue Storage/Service Busにはトリガーソースでの再試行をサポートしている。BLOB Storage/Queue Storageは最大5回、Service Busは最大10回再試行される。
 
 see. https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-bindings-error-pages?tabs=csharp
+
+## ASP.NET Core向けのDockerイメージ
+
+- `dotnet/core/sdk`はビルド用
+- `dotnet/core/aspnet`は実行用
+
+see. https://docs.microsoft.com/ja-jp/aspnet/core/host-and-deploy/docker/building-net-docker-images?view=aspnetcore-5.0
